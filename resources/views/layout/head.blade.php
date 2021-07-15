@@ -50,6 +50,12 @@
 		============================================ -->
     <link rel="stylesheet" href="asset/css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="asset/css/calendar/fullcalendar.print.min.css">
+    <!-- modals CSS
+		============================================ -->
+    <link rel="stylesheet" href="asset/css/modals.css">
+    <!-- forms CSS
+		============================================ -->
+    <link rel="stylesheet" href="asset/css/form/all-type-forms.css">
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="asset/css/style.css">
