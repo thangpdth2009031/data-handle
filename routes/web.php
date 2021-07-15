@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DataHandlerController;
+use App\Http\Controllers\layoutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [layoutController::class, 'home']);
+Route::get('/form' ,[layoutController::class, 'create']);
+Route::get('/list' ,[layoutController::class, 'list']);
+
+
 Route::get('/data-handle/{id}/path',[DataHandlerController::class,'handlePathVariable']);
 Route::get('/data-handle/query-string',[DataHandlerController::class,'handleQueryString']);
 Route::get('/data-handle/form',[DataHandlerController::class,'returnForm']);
